@@ -11,5 +11,7 @@ Food.destroy_all
 
 pantry = Pantry.create({name: "The Big Pantry"})
 
-apples = Food.create({name: "Apple", category: "Fruit", quantity: "6"})
-flour = Food.create({name: "Flour - All Purpose", category: "Baking", quantity: "2 Pounds"})
+apples = Food.create({name: "Apple", category: "Fruit", quantity: "6", pantry_id: 1})
+flour = Food.create({name: "Flour - All Purpose", category: "Baking", quantity: "2 Pounds", pantry_id: 1})
+butter = Food.create({name: "Butter", category: "Dairy", quantity: "1 Pound", pantry_id: 1})
+fPizza = Food.create({name:"Tombstone Frozen Pizza - Pepperoni", category: "Frozen Foods", quantity: "2", pantry_id: 1})
