@@ -6,5 +6,10 @@
 #   movies = Movie.create([{ name: 'Star Wars' }, { name: 'Lord of the Rings' }])
 #   Character.create(name: 'Luke', movie: movies.first)
 
+Pantry.destroy_all
+Food.destroy_all
+
+pantry = Pantry.create({name: "The Big Pantry"})
+
 apples = Food.create({name: "Apple", category: "Fruit", quantity: "6"})
-flour = Food.create({name: "All-Purpose Flour", category: "Baking", quantity: "1 Pound"})
+flour = Food.create({name: "Flour - All Purpose", category: "Baking", quantity: "2 Pounds"})
