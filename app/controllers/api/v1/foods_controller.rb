@@ -1,13 +1,13 @@
 class Api::V1::FoodsController < ApplicationController
     def index
         foods = Food.all
-        render json: foods
+        render json: FoodSerializer.new(foods)
     end
 
     def create
         foods = Foods.new(foods_params)
         if foods.save
-            render json: foods, status :accepted
+            render json: FoodSerializer.new(foods), status: :accepted
         else
             render json: { errors: foods.errors.full_messages }, status: :unprocessable_entity
         end
