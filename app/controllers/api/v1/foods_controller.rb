@@ -5,17 +5,17 @@ class Api::V1::FoodsController < ApplicationController
     end
 
     def create
-        foods = Foods.new(foods_params)
-        if foods.save
-            render json: FoodSerializer.new(foods), status: :accepted
+        food = Food.new(food_params)
+        if food.save
+            render json: FoodSerializer.new(food), status: :accepted
         else
-            render json: { errors: foods.errors.full_messages }, status: :unprocessable_entity
+            render json: { errors: food.errors.full_messages }, status: :unprocessable_entity
         end
     end
 
     private
 
-    def foods_params
+    def food_params
         params.require(:foods).permit(:name, :category, :quantity, :pantry_id)
     end
 
