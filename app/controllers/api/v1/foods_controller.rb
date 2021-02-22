@@ -16,7 +16,7 @@ class Api::V1::FoodsController < ApplicationController
     private
 
     def food_params
-        params.require(:foods).permit(:name, :category, :quantity, :pantry_id)
+        params.require(:food).permit(:name, :category, :quantity, :pantry_id)
     end
 
 end
