@@ -1,24 +1,18 @@
-# README
+# pantry-js-backend
+This is the backend repository for the JavaScript project at Flatiron School.
 
-This README would normally document whatever steps are necessary to get the
-application up and running.
+It is a single page web application driven by asyncrounous Javascript utilizing this backend Rails API (Frontend repository here: https://github.com/mcrooks65/pantry-js-frontend)
 
-Things you may want to cover:
+## Description
+Pantry-js is an application meant help track and organize the food in your pantry.  Current version is only a minimum viable product for the JavaScript project at Flatiron School, but other features could be implemented such as grocery-cart and recipe modules which would enhance the utility of the application greatly.
 
-* Ruby version
+## Installation
+!Improtant! This is only the backend of this application and it will not give you access to the pantry application itself. Make sure to set up this Rails server before proceeding to use the frontend application at https://github.com/mcrooks65/pantry-js-frontend.
 
-* System dependencies
+Once this backend Rails server is running, open index.html (from frontend repo) in your browser of choice to access the pantry web application.
 
-* Configuration
+## Contributing
+Pull requests are welcome. For major changes, please open an issue first to discuss what you would like to change. https://github.com/mcrooks65/pantry-js-backend/pulls
 
-* Database creation
-
-* Database initialization
-
-* How to run the test suite
-
-* Services (job queues, cache servers, search engines, etc.)
-
-* Deployment instructions
-
-* ...
+## License
+[MIT](https://choosealicense.com/licenses/mit/)
